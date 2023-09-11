@@ -1,26 +1,18 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "engines": {
-    "node": ">=16.0.0"
-  },
+  "name": "back-end",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "nodemon server.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node ./bin/www"
   },
-  
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "express-async-handler": "^1.2.0",
-    "nodemailer": "^6.9.1",
-    "nodemon": "^2.0.20"
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "nodemailer": "^4.4.2",
+    "serve-favicon": "~2.4.5"
   }
 }
