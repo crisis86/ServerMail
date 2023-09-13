@@ -27,6 +27,7 @@ transporter.verify((error, success) => {
 });
 
 router.post('/send', (req, res, next) => {
+  const from ="info@spinuptennis.it";
   let name = req.body.name
   let email = req.body.email
   let message = req.body.message
@@ -35,7 +36,7 @@ router.post('/send', (req, res, next) => {
   console.log(req.body.email)
 
   let mail = {
-    from: name,
+    from: from,
     to: email,  //Change to email address that you want to receive messages on
     subject: name,
     text: message
