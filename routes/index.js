@@ -7,12 +7,12 @@ const nodemailer = require('nodemailer');
 //app.use(bodyParser());
 
 let transport = {
-  host: "smtps.aruba.it",
+  host: "smtp.gmail.com",
     port: 465,
     secure: true,
     auth: {
-      user: 'info@spinuptennis.it',
-      pass: 'Modica2022@'
+      user: 'davide.aprea86@gmail.com',
+      pass: 'ntyxbziqqkobdxvx'
   }
 }
 
