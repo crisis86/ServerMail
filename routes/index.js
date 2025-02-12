@@ -7,7 +7,7 @@ const nodemailer = require('nodemailer');
 //app.use(bodyParser());
 
 let transport = {
-  host: "smtps.aruba.it",
+  host: "smtp.aruba.it",
     port: 465,
     secure: true,
     auth: {
