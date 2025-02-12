@@ -7,7 +7,7 @@ const nodemailer = require('nodemailer');
 //app.use(bodyParser());
 
 let transport = {
-  host: "smtp.aruba.it",
+  host: "smtps.aruba.it",
     port: 465,
     secure: true,
     auth: {
@@ -36,10 +36,10 @@ router.post('/send', (req, res, next) => {
   console.log(req.body.email)
 
   let mail = {
-    from: '"SpinupTennis " <info@spinuptennis.it>',
+    from: 'info@spinuptennis.it',
     to: email,  //Change to email address that you want to receive messages on
     subject: name,
-    text: message
+    html:  `<p><strong>Messaggio:</strong> ${message}</p>`
   }
 
   transporter.sendMail(mail, (err, data) => {
